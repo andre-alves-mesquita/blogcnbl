@@ -13,6 +13,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.set("view engine", "ejs");
 consign().include("controllers").into(app);
 
+/*
 conexao.connect((erro) => {
   if (erro) {
     console.log(erro);
@@ -21,6 +22,7 @@ conexao.connect((erro) => {
     Tabelas.init(conexao);
   }
 });
+*/
 
 app.listen(port, () => {
   console.log(`Sistema rodando na porta: ${port}`);
